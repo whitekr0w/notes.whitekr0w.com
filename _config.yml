@@ -175,3 +175,107 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+# Define Jekyll collections
+collections:
+  # Define a collection named "tests", its documents reside in the "_tests" directory
+  attack_flow:
+    permalink: "/:collection/:path/"
+    output: true
+  network:
+    permalink: "/:collection/:path/"
+    output: true 
+  web:
+    permalink: "/:collection/:path/"
+    output: true 
+  iot:
+    permalink: "/:collection/:path/"
+    output: true 
+  cloud:
+    permalink: "/:collection/:path/"
+    output: true 
+  hardware:
+    permalink: "/:collection/:path/"
+    output: true
+  software:
+    permalink: "/:collection/:path/"
+    output: true 
+  social:
+    permalink: "/:collection/:path/"
+    output: true 
+  physical:
+    permalink: "/:collection/:path/"
+    output: true 
+  wireless:
+    permalink: "/:collection/:path/"
+    output: true 
+  supply:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    attack_flow:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: ⚔️ Attack Flow
+    network:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🖥️ Networks
+    web:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🕸️ Web Applications
+    mobile:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 📱 Mobile Applications
+    cloud:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: ☁️ Cloud Software
+    hardware:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 💡 Hardware
+    software:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🧑‍💻 Software
+    social:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🗣️ Social Engineering
+    physical:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🏢 Physical
+    wireless:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 📻 Wireless Devices
+    supply:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 🔗 Supply Chains
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      # nav_exclude: true
+      # Fold the collection in the navigation
+      # Supports true or false (default)
+      # nav_fold: true  # note: this option is new in v0.4
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      # search_exclude: true
