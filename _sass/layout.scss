@@ -4,6 +4,7 @@
   flex-flow: column;
   background-color: $sidebar-color;
 
+
   @include mq(md) {
     position: fixed;
     width: $nav-width-md;
@@ -81,8 +82,8 @@
   display: none;
   margin-bottom: auto;
   width: 100%;
-
-
+  overflow-y: scroll;
+  
   &.nav-open {
     display: block;
   }
@@ -170,9 +171,8 @@ body {
   @include container;
   width: 100%;
   border-top: $border $border-color;
-  ;
   margin-top: auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   padding-top: $sp-4;

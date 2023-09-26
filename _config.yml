@@ -146,10 +146,10 @@ compress_html:
   #   envs: all
 
 collections:
-  preparation:
+  targeting:
     permalink: "/:collection/:path/"
     output: true
-  targeting:
+  preparation:
     permalink: "/:collection/:path/"
     output: true
   information_gathering:
@@ -170,28 +170,25 @@ collections:
   privilege_escalation:
     permalink: "/:collection/:path/"
     output: true
-  command_control:
+  persistence:
     permalink: "/:collection/:path/"
     output: true
   lateral_movement:
     permalink: "/:collection/:path/"
     output: true
-  exfiltration_execution:
-    permalink: "/:collection/:path/"
-    output: true
 
 just_the_docs:
   collections:
-    preparation:
-      nav_fold: true
-      nav_exclude: false
-      search_exclude: false
-      name: 📝 Preparation
     targeting:
       nav_fold: true
       nav_exclude: false
       search_exclude: false
       name: 🎯 Targeting
+    preparation:
+      nav_fold: true
+      nav_exclude: false
+      search_exclude: false
+      name: 📝 Preparation
     information_gathering:
       nav_fold: true
       nav_exclude: false
@@ -227,18 +224,8 @@ just_the_docs:
       nav_exclude: false
       search_exclude: false
       name: 🔁 Persistence
-    command_control:
-      nav_fold: true
-      nav_exclude: false
-      search_exclude: false
-      name: 🛰️ Command & Control
     lateral_movement:
       nav_fold: true
       nav_exclude: false
       search_exclude: false
       name:  ↔️ Lateral Movement
-    exfiltration_execution:
-      nav_fold: true
-      nav_exclude: false
-      search_exclude: false
-      name: 📤 Exfiltration & Execution
