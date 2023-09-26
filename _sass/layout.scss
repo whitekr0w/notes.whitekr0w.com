@@ -5,7 +5,6 @@
   background-color: $sidebar-color;
 
   @include mq(md) {
-
     position: fixed;
     width: $nav-width-md;
     height: 100%;
@@ -29,17 +28,14 @@
   @include mq(lg) {
     // stylelint-disable function-name-case
     // disable for Max(), we want to use the CSS max() function
-    margin-left: Max(
-      #{$nav-width},
-      calc((100% - #{$nav-width + $content-width}) / 8 + #{$nav-width})
-    );
+    margin-left: Max(#{$nav-width},
+      calc((100% - #{$nav-width + $content-width}) / 8 + #{$nav-width}));
     // stylelint-enable function-name-case
   }
 }
 
 .main-content-wrap {
   @include container;
-
   padding-top: $gutter-spacing-sm;
   padding-bottom: $gutter-spacing-sm;
 
@@ -77,7 +73,6 @@
   width: 100%;
 
   @include mq(lg) {
-    
     width: $nav-width;
   }
 }
@@ -86,7 +81,7 @@
   display: none;
   margin-bottom: auto;
   width: 100%;
- 
+
 
   &.nav-open {
     display: block;
@@ -153,15 +148,12 @@
 }
 
 .site-button:hover {
-  background-image: linear-gradient(
-    -90deg,
-    rgba($feedback-color, 1) 0%,
-    rgba($feedback-color, 0.8) 100%
-  );
+  background-image: linear-gradient(-90deg,
+      rgba($feedback-color, 1) 0%,
+      rgba($feedback-color, 0.8) 100%);
 }
 
 // stylelint-disable selector-max-type
-
 body {
   position: relative;
   padding-bottom: $sp-10;
@@ -174,11 +166,11 @@ body {
 }
 
 // stylelint-enable selector-max-type
-
 .site-footer {
   @include container;
   width: 100%;
-  border-top: $border $border-color;;
+  border-top: $border $border-color;
+  ;
   margin-top: auto;
   position: absolute;
   bottom: 0;
@@ -187,7 +179,6 @@ body {
   padding-bottom: $sp-4;
   color: $grey-dk-000;
   text-align: center;
-  
   @include fs-2;
 
   @include mq(md) {

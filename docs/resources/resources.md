@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Resources
-nav_order: 3
+nav_order: 5
 permalink: /resources
+has_children: true
 ---
-# Public resources
+# Resources

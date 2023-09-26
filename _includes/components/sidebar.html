@@ -39,6 +39,7 @@
       </ul>
     {%- endif -%}
     {% if site.just_the_docs.collections %}
+    <br>
       {% assign collections_size = site.just_the_docs.collections | size %}
       {% for collection_entry in site.just_the_docs.collections %}
         {% assign collection_key = collection_entry[0] %}
