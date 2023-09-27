@@ -61,6 +61,9 @@ p {
 a {
   color: $link-color;
   text-decoration: none;
+  &.ignore {
+    color: gray
+  }
 }
 
 a:not([class]) {
@@ -71,6 +74,8 @@ a:not([class]) {
   &:hover {
     text-decoration-color: rgba($link-color, 0.45);
   }
+
+  
 }
 
 code {

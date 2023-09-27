@@ -61,9 +61,19 @@
           rgba($feedback-color, 1) 0%,
           rgba($feedback-color, 0.8) 80%,
           rgba($feedback-color, 0) 100%
+      
         );
+        
       }
+      &.ignore {
+        color: $grey-dk-200;
+        pointer-events: none;
+        cursor: default;
+      &:hover {
+        background-image: none; 
+        }
     }
+  }
 
     .nav-list-expander {
       position: absolute;
@@ -83,11 +93,7 @@
       }
 
       &:hover {
-        background-image: linear-gradient(
-          -90deg,
-          rgba($feedback-color, 1) 0%,
-          rgba($feedback-color, 0.8) 100%
-        );
+        filter: contrast(5);
       }
 
       @if $nav-list-expander-right {
@@ -107,10 +113,21 @@
 
         .nav-list-link {
           color: $nav-child-link-color;
+          &.ignore {
+            color: $grey-dk-200;
+            pointer-events: none;
+            cursor: default;
+          &:hover {
+            background-image: none; 
+            }
+          }
         }
 
         .nav-list-expander {
           color: $nav-child-link-color;
+          &:hover {
+            color: contrast(5);
+          }
         }
       }
     }
@@ -160,17 +177,19 @@
       > .nav-list-item {
         > .nav-list-link {
           color: $link-color;
+          
         }
 
         > .nav-list-expander {
           color: $link-color;
+          &:hover {
+            color: contrast(5);
+          }
         }
       }
     }
   }
 }
-
-// Aux nav
 
 .aux-nav {
   height: 100%;
@@ -191,10 +210,6 @@
     padding: 0;
     margin: 0;
   }
-
-  @include mq(md) {
-    padding-right: $gutter-spacing-sm;
-  }
 }
 
 // Breadcrumb nav
@@ -209,6 +224,7 @@
   padding-left: 0;
   margin-bottom: $sp-3;
   list-style: none;
+  color: gray;
 }
 
 .breadcrumb-nav-list-item {
@@ -217,6 +233,7 @@
 
   &::before {
     display: none;
+    color: $grey-dk-000;
   }
 
   &::after {
@@ -227,9 +244,16 @@
     content: "/";
   }
 
+  &.ignore {
+    color: $grey-dk-000;
+    pointer-events: none;
+    cursor: wait;
+  }
+
   &:last-child {
     &::after {
       content: "";
     }
   }
 }
+
