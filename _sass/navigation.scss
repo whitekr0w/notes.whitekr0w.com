@@ -93,12 +93,15 @@
       }
 
       &:hover {
-        filter: contrast(5);
+        color: $grey-dk-100;
       }
 
       @if $nav-list-expander-right {
         svg {
           transform: rotate(90deg);
+          &:hover {
+            color: $grey-dk-100;
+          }
         }
       }
     }
@@ -126,7 +129,7 @@
         .nav-list-expander {
           color: $nav-child-link-color;
           &:hover {
-            color: contrast(5);
+            color: $grey-dk-100;
           }
         }
       }
@@ -183,7 +186,7 @@
         > .nav-list-expander {
           color: $link-color;
           &:hover {
-            color: contrast(5);
+            color: $grey-dk-100;
           }
         }
       }
