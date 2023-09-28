@@ -86,10 +86,6 @@ mermaid:
 
 heading_anchors: true
 
-aux_links:
-  "Check out my blog!":
-    - "https://whitekr0w.com"
-
 aux_links_new_tab: false
 
 nav_sort: case_sensitive 

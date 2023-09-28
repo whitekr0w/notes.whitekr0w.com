@@ -93,14 +93,14 @@
       }
 
       &:hover {
-        color: $grey-dk-100;
+        color: $grey-dk-000;
       }
 
       @if $nav-list-expander-right {
         svg {
           transform: rotate(90deg);
           &:hover {
-            color: $grey-dk-100;
+            color: $grey-dk-000
           }
         }
       }
@@ -129,7 +129,7 @@
         .nav-list-expander {
           color: $nav-child-link-color;
           &:hover {
-            color: $grey-dk-100;
+            color: $grey-dk-000;
           }
         }
       }
@@ -152,7 +152,7 @@
 }
 
 .nav-category {
-  padding: $sp-2 $gutter-spacing-sm;
+  padding: $sp-4 $gutter-spacing-sm;
   font-weight: 600;
   text-align: start;
   text-transform: uppercase;
@@ -186,7 +186,7 @@
         > .nav-list-expander {
           color: $link-color;
           &:hover {
-            color: $grey-dk-100;
+            color: $grey-dk-000;
           }
         }
       }
